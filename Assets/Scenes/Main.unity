@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 102077745}
   - component: {fileID: 102077744}
   m_Layer: 5
-  m_Name: Neutron
+  m_Name: DeltaPositiva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 116846384}
   - component: {fileID: 116846383}
   m_Layer: 5
-  m_Name: ParticulaAlfa
+  m_Name: DeltaNegativa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Part\xEDcula Alfa\n"
+  m_Text: "Antimu\xF3n"
 --- !u!222 &300349630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 304565982}
   - component: {fileID: 304565981}
   m_Layer: 5
-  m_Name: Otra3
+  m_Name: Taun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,7 +1071,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Part\xEDcula Alfa\n"
+  m_Text: 'Delta Negativa
+
+'
 --- !u!222 &375750532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1316,7 +1318,7 @@ GameObject:
   - component: {fileID: 430543554}
   - component: {fileID: 430543553}
   m_Layer: 5
-  m_Name: Electron
+  m_Name: Proton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1434,7 +1436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e76ad5f6caf3ede4fb4a85f648e5860e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1941,7 +1943,7 @@ GameObject:
   - component: {fileID: 614702949}
   - component: {fileID: 614702948}
   m_Layer: 5
-  m_Name: Proton
+  m_Name: Neutron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2059,7 +2061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0b3132bf36a02c043a1928891aac6f67, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2145,7 +2147,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "N\xFAcleo de Deuterio"
+  m_Text: "Electr\xF3n"
 --- !u!222 &694403822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3124,7 +3126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 07df01f7256d532439988073654a25bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3154,7 +3156,7 @@ GameObject:
   - component: {fileID: 921208946}
   - component: {fileID: 921208945}
   m_Layer: 5
-  m_Name: Otra2
+  m_Name: Antimuon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3359,7 +3361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mu\xF3n\n\n"
+  m_Text: "Positr\xF3n"
 --- !u!222 &944691351
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3944,7 +3946,7 @@ GameObject:
   - component: {fileID: 1151544927}
   - component: {fileID: 1151544926}
   m_Layer: 5
-  m_Name: NDeuterio
+  m_Name: Electron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4152,7 +4154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Neutr\xF3n\n"
+  m_Text: "Antita\xFAn\n"
 --- !u!222 &1246788713
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4216,7 +4218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5cd232d3ca332a9409950e366bf11e9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4642,7 +4644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f0256b580a6d4de409cdfcef827b1248, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5000,7 +5002,7 @@ GameObject:
   - component: {fileID: 1435914028}
   - component: {fileID: 1435914027}
   m_Layer: 5
-  m_Name: Otra1
+  m_Name: Muon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,7 +5280,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Neutr\xF3n\n"
+  m_Text: "Mu\xF3n"
 --- !u!222 &1477281896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5494,7 +5496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Electr\xF3n"
+  m_Text: "Prot\xF3n"
 --- !u!222 &1524823102
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5764,7 +5766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 349fb6408bdf44240a8fd3ad4879770e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5924,7 +5926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mu\xF3n\n\n"
+  m_Text: "Tau\xF3n"
 --- !u!222 &1636966543
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6124,7 +6126,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Prot\xF3n\n"
+  m_Text: "Neutr\xF3n"
 --- !u!222 &1673370089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6230,7 +6232,7 @@ GameObject:
   - component: {fileID: 1718218359}
   - component: {fileID: 1718218358}
   m_Layer: 5
-  m_Name: Muon
+  m_Name: Positron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6586,7 +6588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Neutr\xF3n\n"
+  m_Text: Delta Positiva
 --- !u!222 &1784530201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6727,7 +6729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0f80978a7e0959546acb7364bfae3445, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6849,7 +6851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9afd3b2bce097274a88bde45f2370f8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7241,7 +7243,7 @@ GameObject:
   - component: {fileID: 1949438641}
   - component: {fileID: 1949438640}
   m_Layer: 5
-  m_Name: Otra4
+  m_Name: Antitaun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7598,7 +7600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4848504e8928d3e44bbeb4d4b346a3c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7972,7 +7974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b291133187d7b634ba9919b2d3d7cde6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -7,6 +7,9 @@ using System;
 
 public class Manager : MonoBehaviour
 {
+    // Referencia unica
+    static Manager instance;
+
     // Los menus que obtienen los valores
     public GameObject mainMenu;
     public GameObject particleMenu;
@@ -26,7 +29,7 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        NoDestroy();
     }
 
     public void GoSimulation(int indexScene)
@@ -91,6 +94,19 @@ public class Manager : MonoBehaviour
     public void ChangeScene(int indexScene)
     {
         SceneManager.LoadScene(indexScene);
+    }
+
+    public void NoDestroy()
+    {
+        if(instance == null)
+        {
+            instance = null;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 }
