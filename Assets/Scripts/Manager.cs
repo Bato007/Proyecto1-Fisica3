@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
+using System.Dynamic;
 
 public class Manager : MonoBehaviour
 {
@@ -107,6 +108,32 @@ public class Manager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    // Getters de los atributos
+    public double getSpeed()
+    {
+        return this.speed;
+    }
+
+    public double getAngle()
+    {
+        return this.angle;
+    }
+
+    public double getField()
+    {
+        return this.field;
+    }
+
+    public bool isPositive()
+    {
+        return this.positive;
+    }
+
+    public int getParticlePosition()
+    {
+        return this.particlePosition;
     }
 
 }
