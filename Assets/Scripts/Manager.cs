@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject particleMenu;
     public GameObject erroMenu;
+    public GameObject backMenu;
 
     // Los text fields
     public InputField speedT, angleT, fieldT;
@@ -73,6 +74,11 @@ public class Manager : MonoBehaviour
             speed = System.Convert.ToDouble(speedT.text);
             angle = System.Convert.ToDouble(angleT.text);
             field = System.Convert.ToDouble(fieldT.text);
+
+            // Verificando que el angulo este entre -90 y 90
+            if ((angle > 90) || (angle < -90))
+                return false;
+
             return true;
         }
         catch (System.Exception)
@@ -84,6 +90,7 @@ public class Manager : MonoBehaviour
     public void ChangeError()
     {
         erroMenu.SetActive(!erroMenu.activeSelf);
+        backMenu.SetActive(!backMenu.activeSelf);
     }
 
     public void ChangeView()
