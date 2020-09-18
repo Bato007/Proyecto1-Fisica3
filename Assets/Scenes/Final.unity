@@ -709,11 +709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615900246952306207, guid: 29505514365f62343ac4e218db870e05, type: 3}
       propertyPath: velocity
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6615900246952306207, guid: 29505514365f62343ac4e218db870e05, type: 3}
       propertyPath: angle
-      value: 45
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6615900246952306207, guid: 29505514365f62343ac4e218db870e05, type: 3}
       propertyPath: charge

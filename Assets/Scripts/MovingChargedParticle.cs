@@ -23,7 +23,7 @@ public class MovingChargedParticle : ChargedParticle
         rb.mass = mass;
         rb.useGravity = false;
 
-        rb.velocity = new Vector3(velocity * Mathf.Abs(Mathf.Sin(angle)), velocity * Mathf.Abs(Mathf.Cos(angle)), 0); ;
+        rb.velocity = new Vector3(velocity * Mathf.Abs(Mathf.Cos(angle)), velocity * Mathf.Abs(Mathf.Sin(angle)), 0); ;
     }
 
     private void OnCollisionEnter(Collision collision)
