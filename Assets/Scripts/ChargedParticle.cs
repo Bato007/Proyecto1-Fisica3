@@ -6,6 +6,7 @@ public class ChargedParticle : MonoBehaviour
 {
 
     public float charge = 1;
+    Color color;
 
     private void Start()
     {
@@ -14,7 +15,13 @@ public class ChargedParticle : MonoBehaviour
 
     public void UpdateColor()
     {
-        Color color = charge > 0 ? Color.green : Color.red;
+        if (charge == 0)
+            color = Color.blue;
+        if (charge > 0)
+            color = Color.green;
+        if (charge < 0)
+            color = Color.red;
+        
         GetComponent<Renderer>().material.color = color;
     }
 }
