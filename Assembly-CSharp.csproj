@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\ChargedParticle.cs" />
     <Compile Include="Assets\Scripts\ParticleManager.cs" />
+    <Compile Include="Assets\Scripts\Instantiator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

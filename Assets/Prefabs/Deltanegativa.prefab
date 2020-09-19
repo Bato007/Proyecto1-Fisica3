@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4185455583579577564}
   m_Layer: 0
   m_Name: Deltanegativa
-  m_TagString: Untagged
+  m_TagString: Particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,8 +112,9 @@ MonoBehaviour:
   charge: -1
   mass: 0.5
   rb: {fileID: 0}
-  equis: 100
-  ye: 100
+  velocity: 0
+  angle: 0
+  highest: 0
 --- !u!96 &4185455583579577564
 TrailRenderer:
   serializedVersion: 2

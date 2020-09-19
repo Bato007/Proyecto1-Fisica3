@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2080449277108512364}
   m_Layer: 0
   m_Name: Antimuon
-  m_TagString: Untagged
+  m_TagString: Particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,8 +112,9 @@ MonoBehaviour:
   charge: 1
   mass: 0.1056
   rb: {fileID: 0}
-  equis: 100
-  ye: 100
+  velocity: 0
+  angle: 0
+  highest: 0
 --- !u!96 &2080449277108512364
 TrailRenderer:
   serializedVersion: 2

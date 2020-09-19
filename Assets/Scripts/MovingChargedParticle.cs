@@ -11,19 +11,25 @@ public class MovingChargedParticle : ChargedParticle
     public float velocity = 0;
     public float angle = 0;
     public float highest = 0;
+    private Manager manager;
 
 
-
+    private void Awake()
+    {
+        manager = GameObject.FindObjectOfType<Manager>();
+    }
     private void Start()
     {
-        UpdateColor();
 
+        UpdateData();
 
         rb = gameObject.AddComponent<Rigidbody>();
         rb.mass = mass;
         rb.useGravity = false;
 
-        rb.velocity = new Vector3(velocity * Mathf.Abs(Mathf.Cos(angle)), velocity * Mathf.Abs(Mathf.Sin(angle)), 0); ;
+        rb.velocity = new Vector3(velocity * Mathf.Abs(Mathf.Cos(angle)), velocity * Mathf.Sin(angle), 0);
+
+        UpdateColor();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -36,6 +42,13 @@ public class MovingChargedParticle : ChargedParticle
     {
         if (transform.position.y > highest)
             highest = transform.position.y;
+    }
+
+    private void UpdateData()
+    {
+        velocity = (float)manager.getSpeed() ;
+        angle = (float) manager.getAngle();
+
     }
 
 }
