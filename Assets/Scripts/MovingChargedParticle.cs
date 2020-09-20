@@ -13,6 +13,7 @@ public class MovingChargedParticle : ChargedParticle
     public float highest = 0;
     private Manager manager;
 
+    private bool hitEnd = false;
 
     private void Awake()
     {
@@ -35,7 +36,7 @@ public class MovingChargedParticle : ChargedParticle
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Field" || collision.gameObject.tag == "Stop")
-            Time.timeScale = 0;
+            hitEnd = true;
     }
 
     private void Update()
@@ -51,4 +52,13 @@ public class MovingChargedParticle : ChargedParticle
 
     }
 
+    public bool isInEnd()
+    {
+        return this.hitEnd;
+    }
+
+    public float getMax()
+    {
+        return this.highest;
+    }
 }

@@ -74,7 +74,7 @@ public class Manager : MonoBehaviour
             speed = System.Convert.ToDouble(speedT.text);
             angle = System.Convert.ToDouble(angleT.text);
             field = System.Convert.ToDouble(fieldT.text);
-
+            field = Math.Abs(field);
             // Verificando que el angulo este entre -90 y 90
             if ((angle > 90) || (angle < -90))
                 return false;

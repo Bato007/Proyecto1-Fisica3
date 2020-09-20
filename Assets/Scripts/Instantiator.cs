@@ -19,11 +19,7 @@ public class Instantiator : MonoBehaviour
     void Start()
     {
         Instantiate(prefabs[manager.getParticlePosition()], start, Quaternion.identity);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
