@@ -24,7 +24,7 @@ public class MovingChargedParticle : ChargedParticle
 
         UpdateData();
 
-        rb = gameObject.AddComponent<Rigidbody>();
+        //rb = gameObject.GetComponent<Rigidbody>();
         rb.mass = mass;
         rb.useGravity = false;
 
@@ -41,8 +41,17 @@ public class MovingChargedParticle : ChargedParticle
 
     private void Update()
     {
-        if (transform.position.y > highest)
-            highest = transform.position.y;
+        if(angle > 0)
+        {
+            if (transform.position.y > highest)
+                highest = transform.position.y;
+        }
+        if (angle < 0)
+        {
+            if (transform.position.y < highest)
+                highest = transform.position.y;
+        }
+        
     }
 
     private void UpdateData()

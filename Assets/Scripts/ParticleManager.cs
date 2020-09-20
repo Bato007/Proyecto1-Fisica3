@@ -10,8 +10,20 @@ public class ParticleManager : MonoBehaviour
     private List<ChargedParticle> chargedParticles;
     private List<MovingChargedParticle> movingChargedParticles;
 
+    private Manager manager;
+
+    public List<GameObject> prefabs;
+
+    private Vector3 start = new Vector3(-6f, 0f, 0f);
+
+    private void Awake()
+    {
+        manager = GameObject.FindObjectOfType<Manager>();
+    }
+
     private void Start()
     {
+        Instantiate(prefabs[manager.getParticlePosition()], start, Quaternion.identity);
         chargedParticles = new List<ChargedParticle>(FindObjectsOfType<ChargedParticle>());
         movingChargedParticles = new List<MovingChargedParticle>(FindObjectsOfType<MovingChargedParticle>());
 
@@ -27,6 +39,7 @@ public class ParticleManager : MonoBehaviour
             yield return new WaitForSeconds(cycleInterval);
         }
     }
+
 
     private void ApplyMagneticForce(MovingChargedParticle mcp)
     {
