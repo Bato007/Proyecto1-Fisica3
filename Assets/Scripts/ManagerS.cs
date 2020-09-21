@@ -16,11 +16,18 @@ public class ManagerS : MonoBehaviour
     private bool active = false;
     private float scale = 0.5f;
 
+    private GameObject manager;
     public float time = 0;
     private GameObject particleGO;
     private MovingChargedParticle particle;
     private bool flag = true;
     private bool finish = false;
+
+
+    private void Awake()
+    {
+        manager = GameObject.FindGameObjectWithTag("DataS");
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +96,7 @@ public class ManagerS : MonoBehaviour
     public void ChangeScene(int indexScene)
     {
         SceneManager.LoadScene(indexScene);
+        Destroy(manager);
     }
 
     public void Finish()

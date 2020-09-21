@@ -8,8 +8,7 @@ using System.Dynamic;
 
 public class Manager : MonoBehaviour
 {
-    // Referencia unica
-    static Manager instance;
+    private static Manager instance;
 
     // Los menus que obtienen los valores
     public GameObject mainMenu;
@@ -29,9 +28,9 @@ public class Manager : MonoBehaviour
     private int particlePosition;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        NoDestroy();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void GoSimulation(int indexScene)
@@ -102,19 +101,6 @@ public class Manager : MonoBehaviour
     public void ChangeScene(int indexScene)
     {
         SceneManager.LoadScene(indexScene);
-    }
-
-    public void NoDestroy()
-    {
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
     }
 
     // Getters de los atributos
