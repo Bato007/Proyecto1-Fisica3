@@ -55,7 +55,7 @@ public class ManagerS : MonoBehaviour
         }
 
         //Verifica si ya se tiene que terminar
-        if (particleGO && (particle.isInEnd() || (time >= 0.35f)) && !finish)
+        if (particleGO && (particle.isInEnd() || (time >= 0.65f)) && !finish)
         {
             Finish();
         }
