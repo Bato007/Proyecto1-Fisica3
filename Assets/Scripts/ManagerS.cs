@@ -14,7 +14,7 @@ public class ManagerS : MonoBehaviour
     public Text maxheight;
 
     private bool active = false;
-    private float scale = 1f;
+    private float scale = 0.05f;
 
     public float time = 0;
     private GameObject particleGO;
@@ -55,7 +55,7 @@ public class ManagerS : MonoBehaviour
         }
 
         //Verifica si ya se tiene que terminar
-        if (particleGO && (particle.isInEnd() || (time >= 15f)) && !finish)
+        if (particleGO && (particle.isInEnd() || (time >= 0.35f)) && !finish)
         {
             Finish();
         }

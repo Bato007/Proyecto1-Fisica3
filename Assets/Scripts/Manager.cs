@@ -108,7 +108,7 @@ public class Manager : MonoBehaviour
     {
         if(instance == null)
         {
-            instance = null;
+            instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
         else
