@@ -24,7 +24,6 @@ public class MovingChargedParticle : ChargedParticle
 
         UpdateData();
 
-        //rb = gameObject.GetComponent<Rigidbody>();
         rb.mass = mass;
         rb.useGravity = false;
 
@@ -35,7 +34,7 @@ public class MovingChargedParticle : ChargedParticle
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Field" || collision.gameObject.tag == "Stop")
+        if (collision.gameObject.CompareTag("Field") || collision.gameObject.CompareTag("Stop"))
             hitEnd = true;
     }
 
