@@ -27,7 +27,9 @@ public class MovingChargedParticle : ChargedParticle
         rb.mass = mass;
         rb.useGravity = false;
 
-        rb.velocity = new Vector3(velocity * Mathf.Abs(Mathf.Cos(angle)), velocity * Mathf.Sin(angle), 0);
+        rb.velocity = new Vector3(velocity * Mathf.Cos(angle*Mathf.PI/180), velocity * Mathf.Sin(angle * Mathf.PI / 180), 0);
+
+       
 
         UpdateColor();
     }
