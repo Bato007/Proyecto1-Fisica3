@@ -23,6 +23,8 @@ public class ManagerS : MonoBehaviour
     private bool flag = true;
     private bool finish = false;
 
+    private bool isEcexuting = false;
+
 
     private void Awake()
     {
@@ -102,10 +104,27 @@ public class ManagerS : MonoBehaviour
     public void Finish()
     {
         finish = true;
-        Time.timeScale = 0;
+        StartCoroutine(WaitToShow());
+    }
+
+    IEnumerator WaitToShow()
+    {
+        if (isEcexuting)
+            yield break;
+
+        Debug.Log("Waiting");
+        isEcexuting = true;
+
+
+        yield return new WaitForSeconds(2);
+        Debug.Log("Done");
         maxheight.text = "Altura Máxima:" + particle.getMax().ToString();
         backGround.SetActive(!backGround.activeSelf);
         finishMenu.SetActive(!finishMenu.activeSelf);
+
+        isEcexuting = false;
     }
+
+    
 
 }

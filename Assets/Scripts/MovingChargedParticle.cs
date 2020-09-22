@@ -37,7 +37,11 @@ public class MovingChargedParticle : ChargedParticle
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Field") || collision.gameObject.CompareTag("Stop"))
+        {
             hitEnd = true;
+            Destroy(rb);
+        }
+            
     }
 
     private void Update()
